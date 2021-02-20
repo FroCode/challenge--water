@@ -1,0 +1,149 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+body {
+	background: url(https://i.ibb.co/DtPjB5n/grass.jpg) 0 0 / 20em 20em;
+	display: flex;
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	padding: 1.5em 0;
+}
+.wb, .wb__cap, .wb__mouth, .wb__neck, .wb__top {
+	margin: auto;
+}
+.wb {
+	position: relative;
+	width: 9em;
+	height: 28em;
+}
+.wb__cap {
+	background:
+		linear-gradient(90deg,#001329aa,#00132900 33% 67%,#001329aa),
+		radial-gradient(60% 8% at 50% 4%,#b6cafb,#b6cafb00 50%),
+		linear-gradient(90deg,#5583f600 30%,#5583f6 50%,#5583f600 70%) 0 100% / 100% 0.2em,
+		repeating-linear-gradient(90deg,#0000 0 0.1em,#0d4ef2 0.1em 0.2em,#0000 0.2em) 0 0.1em / 100% 0.7em,
+		linear-gradient(#0b46da 0.1em,#0000 0.1em 0.2em,#0d4ef2 0.2em 0.6em,#0000 0.6em 0.7em,#0d4ef2 0.7em 0.8em,#0000 0.8em 1em,#0b46da 1em) 0 0.9em / 100% 1.25em,
+		radial-gradient(40% 25% at 50% 90%,#b6cafb,#b6cafb00 50%),
+		radial-gradient(40% 200% at 50% 90%,#5583f6,#5583f600 50%),
+		#255ff4;
+	background-repeat: no-repeat;
+	border-radius: 0.25em 0.25em 0 0;
+	width: 3em;
+	height: 2.15em;
+}
+.wb__mouth {
+	border-radius: 0.25em 0.25em 0.125em 0.125em;
+	box-shadow:
+		0 0.2em 0.1em #051433 inset,
+		0 -0.25em 0.15em #aac4dd inset;
+	width: 3.5em;
+	height: 0.3em;
+}
+.wb div:nth-child(n + 3):nth-child(-n + 14) {
+	--blur1: 1px;
+	backdrop-filter: blur(var(--blur1));
+	-webkit-backdrop-filter: blur(var(--blur1));
+}
+.wb__neck {
+	background:
+		linear-gradient(90deg,#051433 0.15em,#05143300 0.25em 2.75em,#051433 2.85em),
+		linear-gradient(90deg,#fff0 12.5%,#fff6 12.5% 40%,#fff0 40% 55%,#fff6 55% 80%,#fff0 80%),
+		linear-gradient(0deg,#05143322,#05143300 0.2em),
+		linear-gradient(90deg,#aac4dd00,#aac4dd77) -3em 0 / 9em 100%;
+	width: 3em;
+	height: 0.8em;
+}
+.wb__top {
+	background:
+		radial-gradient(125% 125% at center,#fff7,#fff0 50%) 4.4em 0.25em / 0.75em 0.3em no-repeat,
+		linear-gradient(132deg,#051433 1.35em,#05143300 1.4em) 0 100% / 100% 60% no-repeat,
+		linear-gradient(-132deg,#051433 1.35em,#05143300 1.4em) 0 100% / 100% 60% no-repeat,
+		linear-gradient(132deg,#05143377 24%,#05143300 27%),
+		linear-gradient(-132deg,#05143377 24%,#05143300 27%),
+		linear-gradient(#05143300 37%,#05143377 38% 42%,#aac4dd77 43%,#aac4dd00 44%),
+		linear-gradient(90deg,#aac4dd00,#aac4dd77);
+	clip-path: polygon(2.75em 0em,5.75em 0em,8.5em 3em,0em 3em);
+	width: 8.5em;
+	height: 3em;
+}
+.wb__middle1 {
+	background:
+		radial-gradient(200% 400% at 100% 100%,#05143300 28%,#051433 33% 50%) 0 0 / 0.75em 0.625em,
+		radial-gradient(200% 400% at 100% 0,#05143300 28%,#051433 33% 50%) 0 100% / 0.75em 0.625em,
+		linear-gradient(90deg,#051433 0.25em,#05143300 0.3em 8.7em,#051433 8.75em) 0 0.625em / 100% calc(100% - 1.25em),
+		radial-gradient(200% 400% at 0 100%,#05143300 28%,#051433 33% 50%) 100% 0 / 0.75em 0.625em,
+		radial-gradient(200% 400% at 0 0,#05143300 28%,#051433 33% 50%) 100% 100% / 0.75em 0.625em,
+		radial-gradient(2.5em 1.25em at 2.375em 100%,#fff4 49%,#fff0 50%) 0 0 / 100% 0.625em,
+		radial-gradient(3em 1.25em at 7.35em 100%,#fff4 49%,#fff0 50%) 0 0 / 100% 0.625em,
+		linear-gradient(90deg,#fff0 55%,#fff3 57%,#fff0 59%) 0 0 / 100% 100%,
+		linear-gradient(90deg,#fff0 12.5%,#fff4 12.5% 40%,#fff0 40% 65%,#fff4 65%) 0 100% / 100% calc(100% - 0.625em),
+		linear-gradient(90deg,#aac4dd00,#aac4dd77);
+	border-radius: 0.3em 0.3em 0.5em 0.5em / 0.75em 0.75em 0.5em 0.5em;
+	height: 2.25em;
+}
+.wb__middle4 {
+	background:
+		radial-gradient(200% 400% at 100% 100%,#05143300 28%,#051433 33% 50%) 0 0 / 0.75em 0.625em,
+		radial-gradient(200% 400% at 100% 0,#05143300 28%,#051433 33% 50%) 0 100% / 0.75em 0.625em,
+		linear-gradient(90deg,#051433 0.25em,#05143300 0.3em 8.7em,#051433 8.75em) 0 0.625em / 100% calc(100% - 1.25em),
+		radial-gradient(200% 400% at 0 100%,#05143300 28%,#051433 33% 50%) 100% 0 / 0.75em 0.625em,
+		radial-gradient(200% 400% at 0 0,#05143300 28%,#051433 33% 50%) 100% 100% / 0.75em 0.625em,
+		linear-gradient(90deg,#fff0 55%,#fff3 57%,#fff0 59%) 0 0 / 100% 100%,
+		linear-gradient(90deg,#fff0 12.5%,#fff4 12.5% 40%,#fff0 40% 65%,#fff4 65%),
+		linear-gradient(90deg,#aac4dd00,#aac4dd77);
+	height: 7em;
+}
+.wb__middle1, .wb__middle4 {
+	background-repeat: no-repeat;
+	box-shadow: 0 -0.1em 0 #05143322 inset;
+}
+.wb div:nth-child(n + 6):nth-child(-n + 13) {
+	border-radius: 0.5em;
+}
+.wb div:nth-child(n + 6):nth-child(-n + 7), .wb div:nth-child(n + 9):nth-child(-n + 13) {
+	background:
+		radial-gradient(200% 200% at 100% 50%,#05143300 28%,#051433 33% 50%) 0 0 / 0.75em 1.25em,
+		radial-gradient(200% 200% at 0 50%,#05143300 28%,#051433 33% 50%) 100% 0 / 0.75em 1.25em,
+		linear-gradient(90deg,#fff0 55%,#fff3 57%,#fff0 59%) 0 0 / 100% 100%,
+		linear-gradient(90deg,#aac4dd00 12.5%,#fff4 12.5% 40%,#fff0 40% 65%,#fff4 65%),
+		linear-gradient(90deg,#aac4dd00,#aac4dd77);
+	background-repeat: no-repeat;
+	box-shadow:
+		0 0.1em 0 #aac4dd33 inset,
+		0 -0.1em 0 #05143322 inset;
+	height: 1.25em;
+}
+.wb__bottom {
+	background:
+		radial-gradient(200% 400% at 100% 100%,#05143300 28%,#051433 33% 50%) 0 0 / 0.75em 1em,
+		radial-gradient(200% 400% at 0 100%,#05143300 28%,#051433 33% 50%) 100% 0 / 0.75em 1em,
+		radial-gradient(200% 400% at 100% 0,#05143300 28%,#051433 33% 50%) 0 100% / 0.75em 2.8em,
+		radial-gradient(200% 400% at 0 0,#05143300 28%,#051433 33% 50%) 100% 100% / 0.75em 2.8em,
+		linear-gradient(#fff4,#fff0) 1.125em 0 / 2.5em 75%,
+		linear-gradient(#fff4,#fff0) 5.85em 0 / 3.15em 75%,
+		linear-gradient(90deg,#aac4dd00,#aac4dd77);
+	background-repeat: no-repeat;
+	border-radius: 0.5em 0.5em 0.75em 0.75em / 0.5em 0.5em 3.25em 3.25em;
+	box-shadow:
+		0 0.1em 0 #aac4dd33 inset,
+		0 -0.25em 0.125em #05143344 inset;
+	height: 3.75em;
+}
+.wb__water {
+	--blur2: 2px;
+	backdrop-filter: blur(var(--blur2));
+	-webkit-backdrop-filter: blur(var(--blur2));
+	clip-path: polygon(1.75em 0em,6.75em 0em,8.5em 2em,8.5em 22.75em,8em 23.5em,0.5em 23.5em,0 22.75em,0em 2em);
+	position: absolute;
+	bottom: 0;
+	left: 0.25em;
+	width: 8.5em;
+	height: 23.5em;
+	z-index: -1;
+}
